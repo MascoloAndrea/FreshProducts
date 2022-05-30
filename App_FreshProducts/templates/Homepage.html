@@ -1,0 +1,190 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'App_FreshProducts/Login.css' %}">
+    <link rel="icon" type="image" href="{% static 'images/Icon.png' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Fresh Products | Homepage</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="/home/">Home</a>
+      <a href="/home/login/">Accedi</a>
+      <a href="/home/registrer/">Registrati</a>
+      <a href="/home/contact/">Contatti</a>
+    </div>
+  </div>
+  <div id="navbar">
+    <span style="font-size:30px;padding-left: 35px;padding-right: 15px;cursor:pointer;color:#ffffff;" onclick="openNav()">&#9776;</span>
+    <a href="/home/" id="logo"> <span style="color:#ff8700;font-size: 45px;">F</span>resh<span style="color:#ff8700;font-size: 45px;">P</span>roducts</a>
+    <div id="navbar-right">
+      <a class="active" href="/home/">Home</a>
+      <a href="/home/login/">Accedi</a>
+      <a href="/home/registrer/">Registrati</a>
+    </div>
+  </div>
+  <section style="margin-bottom: 50px;">
+    <!-- CHI SIAMO? inizio -->
+    <div style="margin-bottom:20px;" class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center pb-1">
+                <div class="col-lg-5">
+                    <img class="img-thumbnail p-3" src="{% static 'images/scaffali.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <small style="--bs-text-opacity:1;background-color:#ff8700;color:white;" class="text-uppercase font-weight-bold px-1">Chi siamo?</small>
+                    <h1 style="margin-bottom:20px;">Freschezza e semplicità a portata di un click</h1>
+                    <p>FreshProducts è un programma gestonale di nuova generazione nato per
+                      garantire efficienza e affidabilità a punti vendita di supermercati nella gestione dei prodotti.
+                      Il programma permette di gestire tutti gli articoli in vendita e in magazzino per assicurare
+                      il rispetto delle scadenze ai consumatori finali dei supermercati. Il servizio è a pagamento
+                      con l'acquisto di una semplice licenza annuale si ha accesso all'area riservata.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- CHI SIAMO? fine -->
+
+    <!-- Assistenza inizio -->
+    <div style="margin-bottom:20px;" class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center pb-1">
+                <div class="col-lg-5">
+                    <img class="img-thumbnail p-3" src="{% static 'images/callcenter.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <small style="--bs-text-opacity:1;background-color:#ff8700;color:white;" class="text-uppercase font-weight-bold px-1">Servizio clienti h24?</small>
+                    <h1 style="margin-bottom:20px;">Assistenza 24/24h 7/7g</h1>
+                    <p>FreshProducts garantisce compreso nella licenza un'assistenza al cliente h 24 dal lunedì
+                      alla domenica con personale esperto e pronto a risolvere tutte le problematiche del caso.
+                      Teniamo molto al parere dei nostri clienti per questo motivo selezioniamo il nostro personale
+                      con estrema attenzione alla ricerca costante di professionalità, competenza ed esperienza
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Assistenza fine -->
+
+    <!-- Interfaccia inizio -->
+    <div style="margin-bottom:20px;" class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center pb-1">
+                <div class="col-lg-5">
+                    <img class="img-thumbnail p-3" src="{% static 'images/interface.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <small style="--bs-text-opacity:1;background-color:#ff8700;color:white;" class="text-uppercase font-weight-bold px-1">Facilità di utilizzo</small>
+                    <h1 style="margin-bottom:20px;">Nuova interfaccia User-Friendly</h1>
+                    <p>FreshProducts ha sviluppato una nuova interfaccia web di facile utilizzo per
+                      tutti gli utenti registrati. L'interfaccia User-Friendly permette una facile
+                      e diretta interazione dell'utente con i dati.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Interfaccia fine -->
+  
+    <article style="max-width:1300px;width:100%;margin-left:auto;margin-right:auto;margin-top: 100px;margin-bottom: 150px;">
+      <h2>Chi siamo?</h2>
+      <p><img src="{% static 'images/Logo.png' %}" hspace="10" align="left" alt=”Impossibile_caricare_immagine”>
+        FreshProducts nasce nel corso dei primi mesi del 2022 ideato per i punti vendita nel rispetto
+        delle scadenze per combattere sprechi alimentari e inutili spese economiche che pesano nel bilancio
+        dei supermercati.<br>
+        Si sviluppa inizialmente con solo un piano di base con l'aspettativa di funzionalità aggiuntive e
+        importanti aggiornamenti futuri.
+      </p>
+    </article>
+  </section>
+
+  
+
+  <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+
+    // menu a scomparsa
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+      document.getElementById("navbar").style.display = "none";
+      //document.getElementById("navbar").style.visibility: hidden;
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+      document.getElementById("navbar").style.display = "block";
+      //document.getElementById("navbar").style.visibility: visible;
+    }
+  </script>
+  <div id="footer">
+    <div style="padding:0px;background-color:#15126b;" class="container">
+        <div class="row">
+            <div class="col-4">
+              <div id="footer_title">
+                <a  title="FreshProducts" style="color:#ffffff;text-decoration:none;" href="/home/" id="logo"><span style="color:#ff8700;font-size: 45px;">F</span>resh<span style="color:#ff8700;font-size: 45px;">P</span>roducts</a>
+
+              </div>
+              <hr>
+              <div class="footer_social">
+                <p>Seguici sulle nostre pagine social</p>
+                <div class="">
+                    <a onmouseover="this.style.color='#ff8700';" onmouseout="this.style.color='';" style="padding-right: 20px; width: 38px; height: 38px;font-size: 35px;" href="https://twitter.com/?lang=it" target="_blanck"><i class="fab fa-twitter"></i></a>
+                    <a onmouseover="this.style.color='#ff8700';" onmouseout="this.style.color='';" style="padding-right: 20px; width: 38px; height: 38px;font-size: 35px;" href="https://it-it.facebook.com/" target="_blanck"><i class="fab fa-facebook-f"></i></a>
+                    <a onmouseover="this.style.color='#ff8700';" onmouseout="this.style.color='';" style="padding-right: 20px; width: 38px; height: 38px;font-size: 35px;" href="https://it.linkedin.com/" target="_blanck"><i class="fab fa-linkedin-in"></i></a>
+                    <a onmouseover="this.style.color='#ff8700';" onmouseout="this.style.color='';"  style="padding-right: 20px; width: 38px; height: 38px;font-size: 35px;" href="https://www.instagram.com/" target="_blanck"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+              <div class="Contact_footer">
+                  <h2 style="font-weight: bold;" class="">Contatti</h2>
+                  <hr>
+                  <p>Di seguito le informazione di contatto</p>
+                  <p><i style="color: #ff8700;" class="fa fa-map-marker-alt mr-2"></i> Via Monte Napoleone n° 8, 20121, Milano</p>
+                  <p><i style="color: #ff8700;" class="fa fa-phone-alt  mr-2"></i> +039 02 5624 9532</p>
+                  <p><i style="color: #ff8700;" class="fa fa-envelope  mr-2"></i> servizioclienti@freshproducts.com</p>
+                  <p><i style="color: #ff8700;" class="fa fa-envelope  mr-2"></i> servizioclienti@pec.freshproducts.com</p>
+              </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+  <footer>
+    <p>
+        &copy; <a  title="FreshProducts" style="color: #ff8700;text-decoration: none;font-weight: 600 !important;" href="#">FreshProducts</a>. All Rights Reserved. Designed by
+        <span style="font-weight: bold;">Andrea Mascolo</span>
+    </p>
+  </footer>
+  </body>
+</html>

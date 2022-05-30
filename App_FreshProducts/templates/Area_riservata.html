@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'App_FreshProducts/Styles.css' %}">
+    <link rel="icon" type="image" href="{% static 'images/Icon.png' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <title>Fresh Products | Area riservata</title>
+  </head>
+  <body>
+    <div style="background-color: white;" id="title">
+      <a title="FreshProducts" href="/area_riservata/"><img src="{% static 'images/Logo.png' %}" align="left" alt="FreshProductsLogo"></a>
+      <h1><a title="FreshProducts" style="color:#15126b;font-size:35px;font-weight:bold;font-family: 'Source Sans Pro', sans-serif;text-decoration:none;" href="/area_riservata/" id="logo"><span style="color:#ff8700;font-size: 45px;">F</span>resh<span style="color:#ff8700;font-size: 45px;">P</span>roducts</a></h1>
+
+      <!--<h1>Fresh Products - Area gestionale</h1>-->
+      <div onselectstart="return false" on dragstart="return false" style="cursor:context-menu" id="title_first_column">
+
+        <h3>
+          Servizio clienti<br>
+          - Tel: 800 715 715 1 <br>
+          - Fax: 390639967700 <br>
+          - Mail: freshproducts@freshproducts.com
+
+        </h3>
+      </div>
+      <div id="title_third_column">
+        <!--<a id="button" href="Login.html">Log out</a>-->
+        <!--<button id="logOut"><a href="Login.html">Log out</a></button>-->
+      </div>
+      <!-- -->
+      <div onselectstart="return false" on dragstart="return false" style="cursor:context-menu" id="title_second_column">
+        {% csrf_token %}
+        <h3>Punto vendita: <color style="color: #de7602">{{Nome}}</color><br>
+        Totale articoli: <color style="color: #de7602">{{totale_prodotti}} articoli</color><br>
+        Articoli in scadenza: <color style="color: #de7602">{{in_scadenza}} articoli</color><br>
+        Articoli senza scadenza: <color style="color: #de7602">{{no_scadenza}} articoli</color></h3>
+
+      </div>
+    
+
+
+
+    </div>
+    <!-- menu-->
+    <div class="menu">
+
+      <a title="Home" class="active" href="/area_riservata/">Home</a>
+
+      <div class="subnav">
+        <button title="Prodotti" class="subnavbtn"><a href="/area_riservata/product/">Prodotti <i class="fa fa-caret-down"></i></a></button>
+        <div class="subnav-content">
+          <a href="/area_riservata/catalogo/">Catalogo</a>
+          <a href="/area_riservata/new_product/">Nuovo prodotto</a>
+          <a href="/area_riservata/remove_product/">Rimuovi prodotto</a>
+          <a href="/area_riservata/modify_product/">Modifica prodotto</a>
+        </div>
+      </div>
+      
+      <a title="Assistenza" href="/area_riservata/assistance/">Assistenza</a>
+      <!--<a href="About.html"></a><i style="font-size:30px;color:#ffffff;" class="fa fa-sign-out-alt"></i></a>-->
+      <div style="float:right;" class="dropdown">
+        <button title="Il mio profilo" class="dropbtn">
+          <i style="color:#ffffff;" class="fa fa-user mr-2"></i>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a style="float:none;" href="/area_riservata/area_utente/">Area utente</a>
+          <a style="float:none;" href="/area_riservata/settings/">Impostazioni</a>
+          <a onclick="LogOut()" style="float:none;">Esci</a>
+        </div>
+      </div>
+    </div>
+    <div id="navbar">
+      <a style="background-color: white" href="#"><img src="{% static 'images/Logo_scritta.png' %}" alt="Logo FreshProducts"></a>
+      <!--<a style="background-color: white" href="Home_page.html"><img src="./Image/Logo.png" align="right" alt="Mia Immagine"></a>-->
+      <a style="margin-top: 29px;" class="active" href="/area_riservata/">Home</a>
+
+      <div class="subnav">
+        <button style="margin-top: 29px;" class="subnavbtn"><a href="/area_riservata/product/">Prodotti <i class="fa fa-caret-down"></i></a></button>
+        <div style="box-shadow: 0px 8px 16px 0px rgba(88,106,153,0.9);" class="subnav-content">
+          <a href="/area_riservata/catalogo/">Catalogo</a>
+          <a href="/area_riservata/new_product/">Nuovo prodotto</a>
+          <a href="/area_riservata/remove_product/">Rimuovi prodotto</a>
+          <a href="/area_riservata/modify_product/">Modifica prodotto</a>
+        </div>
+      </div>
+      <a style="margin-top: 29px;" href="/area_riservata/assistance/">Assistenza</a>
+      <div style="float:right;margin-top: 29px;" class="dropdown">
+        <button class="dropbtn">
+          <i style="color:#ffffff;" class="fa fa-user mr-2"></i>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div style="box-shadow: 0px 8px 16px 0px rgba(88,106,153,0.9);" class="dropdown-content">
+          <a style="float:none;" href="/area_riservata/area_utente/">Area utente</a>
+          <a style="float:none;" href="/area_riservata/settings/">Impostazioni</a>
+          <a onclick="LogOut()" style="float:none;">Esci</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 style="color:#15126b">Homepage | <span style="color:#ff8700;">F</span>resh<span style="color:#ff8700;">P</span>roducts</h1>
+      <hr>
+    </div>
+    <div class="container">
+      <h2 style="color:#ff8700">Dettagli Utente</h2>
+      <hr>
+      <p><b style="color:#15126b">Username: </b>{{username}}</p>
+      <p><b style="color:#15126b">Email: </b>{{email}}</p>
+      <p><b style="color:#15126b">Data di iscrizione: </b>{{date_joined}}</p>
+      <p><b style="color:#15126b">Ultimo accesso: </b>{{last_login}}</p>
+    </div>
+    <div class="container">
+      <h2 style="color:#ff8700">Dettagli Licenza</h2>
+      <hr>
+      <p><b style="color:#15126b">Product key: </b>{{Code}}</p>
+      <p><b style="color:#15126b">Data di attivazione: </b>{{Data_sottoscrizione}}</p>
+      <p><b style="color:#15126b">Data di scadenza: </b>{{Data_scadenza}}</p>
+      <p><b style="color:#15126b">Prezzo d'acquisto: </b>{{Prezzo}} €</p>
+    </div>
+    
+    <!--<button id="button" onclick="href='Login.html'"><a href="Login.html">Log out</a></button>-->
+    <!--<a href="Login.html" id = "bottoni">Log out</a>-->
+    
+    <script type="text/javascript">
+      window.onscroll = function() {scrollFunction()};
+      document.getElementById("navbar").style.top = "-350px";
+
+      function LogOut() {
+        if(window.confirm("Stai uscendo dall'area riservata. Confermare il logout?")) {
+          window.location.replace("/home/logout/");
+          return
+        } else {
+          return
+        }
+      }
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 175 || document.documentElement.scrollTop > 175) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-350px";
+        }
+      }
+    </script>
+    <footer>
+      <p>
+          &copy; <a style="color: #ff8700;text-decoration: none;font-weight: 600 !important;" href="#">FreshProducts</a>. All Rights Reserved. Designed by
+          <span style="font-weight: bold;">Andrea Mascolo</span>
+      </p>
+    </footer>
+  </body>
+</html>

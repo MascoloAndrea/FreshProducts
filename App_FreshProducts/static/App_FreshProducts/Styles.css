@@ -1,0 +1,560 @@
+
+/*
+  blu sfondo:   #15126b     rgba(21,18,107,255)
+  blu attivo:   #151231     rgba(21,18,49)
+  giallo:       #ff8700     rgba(255,135,0,255)
+  gialloattivo: #de7602
+
+  cursor: not-allowed; modifica cursore indicando il blocco
+*/
+
+#title{
+  /*background-color: #ffff;*/
+  background-color: #15126b;
+}
+
+#title_first_column {
+	width:30%;
+  flex:0 0 auto;
+  /*margin-top: 50px;*/
+	float:left;
+	text-align:left;
+	padding: 0px;
+	color:#15126b;
+	font-family: Arial;
+	font-size:95%;
+	line-height:1.4em;
+}
+#title_second_column {
+	width: 30%;
+	margin-left: 650px;
+  flex:0 0 auto;
+	text-align:justify;
+	padding:0px;
+	color:#15126b;
+	font-family:Helvetica, Arial, Verdana, sans-serif;
+	font-size:95%;
+	line-height:1.4em
+}
+#title_third_column {
+	width:10%;
+  flex:0 0 auto;
+	height: 0%;
+	float:right;
+	text-align:left;
+	margin:0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-bottom: 50px;
+	color:#15126b;
+	font-family: Arial;
+	font-size:95%;
+	line-height:1.4em;
+}
+
+#logOut {
+  display: block;
+  text-decoration: none;
+  line-height: 2.0; /*altezza bottone*/
+  font-size: 95%; /* grandezza font*/
+  padding-left: 19px; /*  padding-left*/
+  padding-right: 19px; /*# padding-right*/
+  border: 1px solid #15126b; /*# spessore e colore del bordo del bottone*/
+  border-radius: 5px; /*# rotondezza del bottone*/
+  background-color: #15126b; /*# sfondo del bottone*/
+  border-color: #3405C4; /*# colore del bordo del bottone*/
+
+	margin-left:220px;
+	text-align:justify;
+	color:white;
+	font-family:Helvetica, Arial, Verdana, sans-serif;
+}
+
+body {
+  background-color: white;
+  margin: 0px;
+}
+#title h1 {
+  color: #15126b;
+  padding-bottom: 0px;
+  margin: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/*drop down - inizio*/
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #151231;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: #15126b;
+  min-width: 160px;
+  /*box-shadow: 0px 8px 16px 0px rgba(88,106,153,0.9);*/
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #151231;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*drop down - fine*/
+
+
+/*Impostazioni della barra menu*/
+.menu {
+  margin: 0;
+  padding : 0;
+  left: 0;
+  width: 100%;
+  background-color: #15126b; /* sfondo barra blu*/
+  overflow: hidden;
+}
+
+
+/* Impostazioni delle varie opzioni all'interno della barra di menu */
+
+
+.menu a {
+  float: left; /* allineamento blocchi*/
+  color: white;  /* colore del font*/
+  text-align: center; /*allineamento testo nei blocchi*/
+  padding: 14px 16px; /*padding*/
+  text-decoration: none;
+  font-size: 17px; /* grandezza font*/
+}
+
+/* Impostazioni menu con puntatore mouse sulle opzioni */
+.menu a:hover {
+  background-color: #151231; /* grey colore con puntatore*/
+  color: white;
+  padding: 14px 16px; /*padding*/
+}
+
+/* Impostazioni menu della sezione attiva nella quale ci si trova */
+.menu a.active {
+  background-color: #ff8700;
+  color: white;
+  padding: 14px 16px; /*padding*/
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  /*float: left;  allineamento blocchi*/
+  border: none;
+  outline: none;
+  /*padding: 14px 16px;*/
+  padding: 0px 0px;
+  text-decoration: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.menu a:hover{
+  background-color: #151231; /*#ff8700;*/
+  border-radius: 0px;
+  padding: 14px 16px;
+}
+
+.subnav {
+  background-color: #15126b;
+  padding: 0px 0px;
+  margin-bottom: 0;
+}
+/*
+.subnav:hover {
+  /*background-color: #151231; /*#151231; /*#ff8700;*/
+  /*border-radius: 0px;
+  padding: 0px 0px;
+}
+*/
+
+/*Opzioni button del menu a tendina*/
+.subnavbtn {
+  /*border-radius: 0px;*/
+  padding: 0px 0px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  /*
+  Lunghezza barra di subnavigazione
+
+  left: 0;
+  width: 100%;
+  */
+  background-color: #15126b; /* #ff8700;*/
+}
+
+/* opzioni a nel menu a tendina */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* opzioni menu a tendina */
+.subnav-content a:hover {
+  background-color: #15126b; /*#151231;*/
+  padding: 7px 16px;
+  color: white;
+}
+
+/* quando si è sul button mostra il menu a tendina */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+#navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+	box-shadow: 0 8px 15px 0 rgba(88,106,153,.9);
+  left: 0;
+  background-color: #15126b; /* sfondo barra blu*/
+
+}
+
+#navbar a.active {
+  background-color: #ff8700;
+  color: white;
+  padding: 14px 16px; /*padding*/
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  padding: 14px 16px; /*padding*/
+  font-size: 17px; /* grandezza font*/
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: white;
+  background-color: #151231; /*#ff8700;*/
+  border-radius: 0px;
+  padding: 14px 16px;
+}
+
+
+.button{
+  /*area di posizionamento di tutti i button*/
+  margin: 0;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+#submit {
+  width: 150px;
+  padding: 12px;
+  margin: 8px 0;
+  font-size:18px;
+  display: inline-block;
+  color: #ffffff;
+  border: 1px solid #15126b;/*#ccc;*/
+  background-color: #15126b;
+  box-sizing: border-box;
+  border-radius: 5px; /*# rotondezza del bottone*/
+}
+
+#submit:hover {
+  background-color: #ff8700;
+  border-color: #de7602;
+}
+
+.button a, .button button{
+  display: block;
+  text-decoration: none;
+  font-size: 19px; /* grandezza font*/
+  font-family: 'Source Sans Pro', sans-serif; /*# tipo font*/
+  border: 1px solid; /*# spessore e colore del bordo del bottone*/
+  border-radius: 5px; /*# rotondezza del bottone*/
+  /*cursor: pointer; /*modifica del cursore del mouse*/
+  line-height: 2.5; /*altezza bottone*/
+  background-color: #15126b; /*# sfondo del bottone*/
+  color: #fff; /*# colore del testo*/
+  border-color: #3405C4; /*# colore del bordo del bottone*/
+  width: 125px; /*larghezza button*/
+  text-align: center; /*allineamento testo del button*/
+}
+
+.button a:hover{
+	background-color: #ff8700;
+  border-color: #de7602; /*# colore del bordo del bottone*/
+  color: #000000;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  width:100%;
+  padding: 10px;
+  /*border-top: 1px solid;
+  border-color: #3405C4;*/
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: black;
+}
+
+/*
+FORM NEW PRODUCTS
+*/
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  /*padding: 16px;*/
+  margin: 80px;
+  font-family: Arial;
+  font-size: 18px;
+  max-width: 2100px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=date], input[type=number] {
+  width: 100%;
+  font-size: 18px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid rgb(213, 213, 213);
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5px;
+  background: #ffffff;
+}
+
+.input:disabled{
+  background-color: #d1d1d1;
+  cursor:not-allowed;
+}
+
+.input[type=text]:focus, .input[type=password]:focus, .input[type=date]:focus, .input[type=number]:focus {
+  background-color: #fbc689;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  border: 1px solid #15126b;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  border-radius: 5px;
+  background-color: #15126b;
+  font-size: 18px;
+  color: white;
+  padding: 16px 20px;
+  margin-top: 60px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.registerbtn:hover {
+  background-color: #ff8700;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+
+/*
+FORM NEW PRODUCTS
+*/
+
+
+/*CSS TABLE -- INIZIO --*/
+
+#search {
+  /*background-image: "../images/searchicon.png";
+  background-position: 10px 10px;
+  background-repeat: no-repeat;*/
+  width: 100%;
+  font-size: 16px;
+  /*padding: 12px 20px 12px 40px;*/
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#table th, #table td {
+  text-align: left;
+  padding: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#table tr {
+  border-bottom: 1px solid #ddd;
+  
+}
+
+#table tr.header{
+  background-color: #15126b;
+  color: #ffffff;
+  max-width: 100%;
+}
+#table tr:hover {
+  background-color: #ff8700;
+}
+
+#table tr.header:hover{
+  background-color: #15126b;
+  color: #ffffff;
+}
+
+
+/*CSS TABLE -- FINE --*/
+
+
+/*SELECT*/
+select {
+  width: 100%;
+  font-size: 18px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid rgb(213, 213, 213);
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.5px;
+  background: #ffffff;
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 30px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ff8700;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff8700;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

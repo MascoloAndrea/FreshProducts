@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'App_FreshProducts/Login.css' %}">
+    <link rel="icon" type="image" href="{% static 'images/Icon.png' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <title>Fresh Products | Registrati</title>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="/home/">Home</a>
+      <a href="/home/login/">Accedi</a>
+      <a href="/home/registrer/">Registrati</a>
+      <a href="/home/contact/">Contatti</a>
+    </div>
+  </div>
+  <div id="navbar">
+    <span style="font-size:30px;padding-left: 35px;padding-right: 15px;cursor:pointer;color:#ffffff;" onclick="openNav()">&#9776;</span>
+    <a href="/home/" id="logo"> <span style="color:#ff8700;font-size: 45px;">F</span>resh<span style="color:#ff8700;font-size: 45px;">P</span>roducts</a>
+    <div id="navbar-right">
+      <a  href="/home/">Home</a>
+      <a href="/home/login/">Accedi</a>
+      <a class="active" href="/home/registrer/">Registrati</a>
+    </div>
+  </div>
+  <section>
+    <!-- Registrazione inizio -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center pb-1">
+                <div class="col-lg-5">
+                    <img class="img-thumbnail p-3" src="{% static 'images/about.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <small style="--bs-text-opacity:1;background-color:#ff8700;color:white;" class="text-uppercase font-weight-bold px-1">Come registrare la propria attività?</small>
+                    <h1 style="margin-bottom:20px;">Istruzioni d'acquisto</h1>
+                    <p>Per l'acquisto di qualsiasi licenza d'uso è necessario inviare una richiesta
+                      al nostro indirizzo di Posta Elettronica Certificata (PEC).<br>
+                      Entro e non oltre i 15 giorni lavorativi il nostro servizio di assistenza clienti,
+                      previa effettuazione di tutti i controlli necessari, provvederà alla creazione di
+                      una nuova utenza e inoltrerà le credenziali d'accesso all'area riservata.
+                    </p>
+                    <a onmouseover="this.style.backgroundColor='#de7602';" onmouseout="this.style.backgroundColor='#ff8700';" style="color:black;background-color:#ff8700;border-color:#ff8700;" href="/home/contact/" class="btn py-md-2 px-md-4 font-weight-semi-bold">Contattaci</a>
+                    <!--<a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Read More</a>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Registrazione? fine -->
+
+  </section>
+  <div style="margin-bottom: 50px;" class="container-fluid pt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-7">
+                  <div class="row">
+                      <div class="col-md-6 mb-5">
+                          <div style="--bs-bg-opacity: 1;background-color: #ff8700;" class="d-flex flex-column align-items-center justify-content-center p-4">
+                              <h3>Base</h3>
+                              <h1 class="display-4 mb-0">
+                                  <small class="align-top"
+                                      style="font-size: 22px; line-height: 45px;">€</small>2.500<small
+                                      class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                      Anno</small>
+                              </h1>
+                          </div>
+                          <div class="border border-top-0 d-flex flex-column align-items-center py-4">
+                              <p>Accesso area riservata</p>
+                              <p>Compatibilità con tutti i Browsers</p>
+                              <p>Gestione prodotti e scadenze</p>
+                              <p>Assistenza 24/24H 7/7g</p>
+                              <a onmouseover="this.style.backgroundColor='#de7602';" onmouseout="this.style.backgroundColor='#ff8700';" style="color:black;background-color:#ff8700;border-color:#ff8700;" href="/home/contact/" title="Acquista Ora" class="btn  py-md-2 px-md-4 font-weight-semi-bold my-2">Acquista Ora</a>
+                          </div>
+                      </div>
+                      <div class="col-md-6 mb-5">
+                          <div style="--bs-bg-opacity: 1;background-color: #ff8700;" class="d-flex flex-column align-items-center justify-content-center p-4">
+                              <h3>Premium</h3>
+                              <h1 class="display-4 mb-0">
+                                  <small class="align-top"
+                                      style="font-size: 22px; line-height: 45px;">€</small>7.500<small
+                                      class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                      Anno</small>
+                              </h1>
+                          </div>
+                          <div class="border border-top-0 d-flex flex-column align-items-center py-4">
+                              <p>Privileggi utente base</p>
+                              <p>Gestione ordini e fornitori</p>
+                              <p>Gestione personale</p>
+                              <p>Sito web personalizzabile</p>
+                              <a onmouseover="this.style.backgroundColor='#de7602';" onmouseout="this.style.backgroundColor='#ff8700';" style="color:black;background-color:#ff8700;border-color:#ff8700;" title="Non disponibile" href="/home/contact/" class="btn py-md-2 px-md-4 font-weight-semi-bold my-2">Acquista Ora</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-5 mb-5">
+                  <small style="--bs-bg-opacity: 1;background-color: #ff8700;" class="d-inline text-white text-uppercase font-weight-bold px-1">Il nostro programma d'acquisto</small>
+                  <h2 style="margin-top: 10px;font-weight:bold;">Pacchetti personalizzabili in base alle necessità.</h2>
+                  <h4 style="text-align: justify;margin-top: 10px;color:#a6a6a6;">Disponiamo di diverse tipologie d'acquisto personalizzate per adattarci a tutte le esigenze del cliente. Attualmente è disponibile all'acquisto solamente la soluzione base, presto verranno attivate nuove funzioni.</h4>
+                  <h5 class="font-weight-bold mb-4">Hai bisogno di un piano personalizzato?</h5>
+                  <a onmouseover="this.style.backgroundColor='#de7602';" onmouseout="this.style.backgroundColor='#ff8700';" style="color:black;background-color:#ff8700;border-color:#ff8700;" href="/home/contact/" title="Contattaci" class="btn py-md-2 px-md-4 font-weight-semi-bold">Contattaci</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+
+    // menu a scomparsa
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+      document.getElementById("navbar").style.display = "none";//"contents";
+      //document.getElementById("navbar").style.visibility: hidden;
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+      document.getElementById("navbar").style.display = "block";
+      //document.getElementById("navbar").style.visibility: visible;
+    }
+  </script>
+  <div id="footer">
+    <div style="padding:0px;background-color:#15126b;" class="container">
+        <div class="row">
+            <div class="col-4">
+              <div id="footer_title">
+                <a title="FreshProducts" style="color:#ffffff;text-decoration:none;" href="/home/" id="logo"><span style="color:#ff8700;font-size: 45px;">F</span>resh<span style="color:#ff8700;font-size: 45px;">P</span>roducts</a>
+
+              </div>
+              <hr>
+              <div class="footer_social">
+                <p>Seguici sulle nostre pagine social</p>
+                <div class="">
+                    <a onmouseover="this.style.color='#ff8700';" onmouseout="this.style.color='';" style="padding-right: 20px; width: 38px; height: 38px;font-size: 35px;" href="https://twitter.com/?lang=it" target="_blanck"><i class="fab fa-twitter"></i></a>
+                    <a onmouseover="this.style.color='#ff8700';" onmouseout="this.style.color='';" style="padding-right: 20px; width: 38px; height: 38px;font-size: 35px;" href="https://it-it.facebook.com/" target="_blanck"><i class="fab fa-facebook-f"></i></a>
+                    <a onmouseover="this.style.color='#ff8700';" onmouseout="this.style.color='';" style="padding-right: 20px; width: 38px; height: 38px;font-size: 35px;" href="https://it.linkedin.com/" target="_blanck"><i class="fab fa-linkedin-in"></i></a>
+                    <a onmouseover="this.style.color='#ff8700';" onmouseout="this.style.color='';"  style="padding-right: 20px; width: 38px; height: 38px;font-size: 35px;" href="https://www.instagram.com/" target="_blanck"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+              <div class="Contact_footer">
+                  <h2 style="font-weight: bold;" class="">Contatti</h2>
+                  <hr>
+                  <p>Di seguito le informazione di contatto</p>
+                  <p><i style="color: #ff8700;" class="fa fa-map-marker-alt mr-2"></i> Via Monte Napoleone n° 8, 20121, Milano</p>
+                  <p><i style="color: #ff8700;" class="fa fa-phone-alt  mr-2"></i> +039 02 5624 9532</p>
+                  <p><i style="color: #ff8700;" class="fa fa-envelope  mr-2"></i> servizioclienti@freshproducts.com</p>
+                  <p><i style="color: #ff8700;" class="fa fa-envelope  mr-2"></i> servizioclienti@pec.freshproducts.com</p>
+              </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+  <footer>
+    <p>
+        &copy; <a title="FreshProducts" style="color: #ff8700;text-decoration: none;font-weight: 600 !important;" href="#">FreshProducts</a>. All Rights Reserved. Designed by
+        <span style="font-weight: bold;">Andrea Mascolo</span>
+    </p>
+  </footer>
+  </body>
+</html>
